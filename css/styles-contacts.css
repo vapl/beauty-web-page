@@ -1,0 +1,67 @@
+/* ================ Contacts ================ */
+
+.contacts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+    justify-content: center;
+}
+
+.contacts-content {
+    justify-self: center;
+    align-self: center;
+    padding: 10em 0 10em 0;
+}
+
+.icon {
+    height: clamp(1rem, 2vw, 1.2rem);
+    width: auto;
+    margin: .5em;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.mailito {
+    color: var(--clr-dark-grey);
+    transition: ease-in-out .4s;
+}
+
+.mailito:hover {
+    text-decoration: underline;
+}
+
+.hor-line-contacts {
+    margin: 2em 0 2em 0;
+    width: 100%;
+}
+
+.working-time {
+    text-align: center;
+}
+
+.time-title {
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.contacts-map {
+    position: relative;
+    overflow: hidden;
+    min-height: 20em;
+}
+
+.contacts-map::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url(../img/map.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

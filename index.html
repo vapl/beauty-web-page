@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>skin.by.jana | Cosmetology</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,900;1,200;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/calculator.css">
+    </head>
+    <body class="container">
+
+        <!-- Navigācija -->
+        <header>
+            <div class="nav-bar container">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="skin.by.jana logo"></a>
+                <div class="hamburger-menu close-menu" onclick="openCloseMenu()">
+                    <div class="line line-45"></div>
+                    <div class="line-mid"></div>
+                    <div class="line line--45"></div>
+                </div>
+                <div class="header">
+                    <nav>
+                        <a class="nav-links" href="index.html">Sākums</a>
+                        <a class="nav-links" href="services.html">Procedūras</a>                        
+                        <a class="nav-links" href="contacts.html">Kontakti</a>
+                    </nav>
+                    <div class="lang">
+                        <div class="lang-row"><img src="img/latvia.png" alt="Latvian language icon" class="lang-icon"><span>LV</span></div>
+                        <div class="lang-row"><img src="img/united-kingdom.png" alt="Latvian language icon" class="lang-icon"><span>EN</span></div>
+                        <div class="lang-row"><img src="img/russia.png" alt="Latvian language icon" class="lang-icon"><span>RU</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Galvenās lapas virsraksts -->
+            <div class="cover">
+                <div class="hero">
+                    <h1 class="hero-title">Janas Vaščenkovas</h1>
+                    <p class="hero-subtitle">Privātprakse kosmetoloģijā</p>
+                </div>
+                <a href="contacts.html" class="btn btn-filled">Pieteikties vizītei</a>
+            </div>
+        </header>
+        
+        <!-- 3. Kontroldarbs - Līzinga kalkulators -->
+        <div id="leasing-container">
+            <form class="form" action="/index.html" method="" onsubmit="return calculation()">
+                <h3 class="form-title">Līzinga kalkulators (3. kontroldarbs)</h3>
+                <div class="form-grid">
+                    <div class="wrapper">
+                        <label for="sum">Summa</label>
+                        <input id="sum" type="number" name="sum" placeholder="Ievadiet summu" />
+                    </div>
+                    <div class="wrapper">
+                        <label for="interest">Procentu likme</label>
+                        <select id="interest" name="interest">
+                            <option value="0.07">7%</option>
+                            <option value="0.10">10%</option>
+                            <option value="0.15">15%</option>
+                        </select>
+                    </div>
+                    <div class="wrapper">
+                        <label for="leasing-term">Līzinga termiņš</label>
+                        <select id="leasing-term" name="leasing-term">
+                            <option value="6">6 mēn.</option>
+                            <option value="12">12 mēn.</option>
+                            <option value="18">18 mēn.</option>
+                            <option value="24">2 gadi.</option>
+                            <option value="60">5 gadi</option>
+                            <option value="84">7 gadi</option>
+                        </select>
+                    </div>
+                </div>                
+                <input id="submit-button" class="btn btn-filled" type="submit" value="Aprēķināt" />
+
+                <div class="result">
+                    <div class="result-wrap">
+                        <p class="result-lebel">Ikmēneša maksājums: </p>
+                        <p class="monthly-payment-result"> 0.00 €</p><!-- JavaScript -->
+                    </div>
+                    <div class="result-wrap">
+                        <p class="result-lebel">Kopējā atmaksājamā summa: </p>
+                        <p class="refundable-amount-result">0.00 €</p><!-- JavaScript -->
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- / 3. Kontroldarbs - Līzinga kalkulators -->
+
+
+
+
+        <!-- Pakalpojumi -->
+        <section>
+            <h2 class="chapter-title">Procedūras</h2>
+            <div class="cont-services">
+                <a href="facials.html">
+                    <div class="card-services">                    
+                        <div class="bg-img bg-img-facials"></div>
+                        <p>Sejas procedūras</p>
+                    </div>
+                </a>
+                <a href="waxing.html">
+                    <div class="card-services">
+                        <div class="bg-img bg-img-waxing"></div>                    
+                        <p>Vaksācija</p>
+                    </div>
+                </a>
+                <a href="brows-lashes.html">
+                    <div class="card-services">
+                        <div class="bg-img bg-img-brows-lashes"></div>                    
+                        <p>Uzacis un Skropstas</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Par mani -->
+        <section>
+            <!-- <h2 class="chapter-title">Par mani</h2> -->
+            <div class="about">
+                <div class="about-body">
+                    <div class="content">
+                        <img src="img/about-image.jpg" alt="Meistares iepazīšanās bilde">
+                        <h5 class="about-title">Sveiki, mani sauc Jana!</h5>
+                        <p class="about-text">Savu gaitu skaistumkopšanas jomā es iesāku 8 gadus atpakaļ, veiksmīgi absolvējot Latvijas Universitātes P. Stradiņa medicīnas koledžu, kļūstot par sertificētu skaistumkopšanas speciālisti (kosmetoloģijā). Turpinot savu attīstību skaistumkopšanas jomā, iestājos mācību centrā "SPA school", kur ieguvu SPA mestara kvalifikāciju un starptautisko ITEC diplomu.</p><p class="about-text">Esmu ārstniecības persona un mans pienākums ir nepārtraukti paaugstināt savu kvalifikāciju un pilnveidot savas profesionālās zināšanas un prasmes kosmetoloģijā, piedaloties dažādās konferencēs un semināros, kas tiek rīkoti skaistumkopšanas un medicīnas nozares profesionāļiem.</p><p class="about-text">Savā praksē saviem klientiem es palīdzu uzturēt veselu un skaistu sejas ādu, un maksimāli ilgi izvairīties no vecuma pazīmēm.</p>
+                    </div>
+                    <!-- Sertifikāti - bildes -->
+                    <div class="sertificates">
+                        <img src="img/sert-aps.jpg" alt="Ārstniecības personas sertifikāts" class="item-image">
+                        <img src="img/sert-biodroga.jpg" alt="Biodroga sertifikāts" class="item-image">    
+                        <img src="img/sert-spa-school.jpg" alt="SPA skolas sertifikāts" class="item-image">
+                        <img src="img/sert-comp-therapies.jpg" alt="Terapeita sertifikāts" class="item-image">
+                    </div>
+                </div>
+                <div class="bg-img-box"></div>
+            </div>
+        </section>
+
+        <!-- Procedūras darba gaita -->
+        <section class="workflow">
+            <h2 class="chapter-title">Procedūras darba gaita</h2>
+            <div class="main-workflow-container">
+                <div class="workflow-container">
+                    <div class="row-workflow card-left">
+                        <div class="card-body card-body-left">
+                            <h5 class="card-title"><span>.01</span> Konsultācija</h5>
+                            <p class="card-text">Iepazīšanās ar klientu un svarīgo jautājumu izrunāšana, vēlmju uzklausīšana. Sejas ādas diagnostika un skaistuma mērķa noteikšana. Rekomendācijas un skaistumkopšanas līdzekļu ieteikšana mājas kopšanai</p>
+                        </div>
+                        <div class="vector vector-1">
+                            <div class="vector-circle"></div>
+                            <div class="vector-line"></div>
+                        </div>
+                    </div>
+                    <div class="row-workflow card-right">
+                        <div class="card-body card-body-right">
+                            <h5 class="card-title"><span>.02</span> Procedūra</h5>
+                            <p class="card-text">Sejas ādas kopšana, kas fokusēta uz konkrētu ādas vajadzību apmierināšanu</p>
+                        </div>
+                        <div class="vector vector-2">
+                            <div class="vector-circle"></div>
+                            <div class="vector-line"></div>                            
+                        </div>
+                    </div>
+                    <div class="row-workflow card-left">
+                        <div class="card-body card-body-left">
+                            <h5 class="card-title"><span>.03</span> Rezultāti</h5>
+                            <p class="card-text">Sejas ādas kopšana, kas fokusēta uz konkrētu ādas vajadzību apmierināšanu</p>
+                        </div>
+                        <div class="vector vector-3">
+                            <div class="vector-circle"></div>
+                            <div class="vector-line"></div>
+                        </div>
+                    </div>
+                    <div class="row-workflow card-right">
+                        <div class="card-body card-body-right">
+                            <h5 class="card-title"><span>.04</span> Vizīte</h5>
+                            <p class="card-text">Sejas ādas kopšana, kas fokusēta uz konkrētu ādas vajadzību apmierināšanu</p>
+                        </div>
+                        <div class="vector vector-4">
+                            <div class="vector-circle"></div>
+                            <div class="vector-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section class="safety">
+            <div class="safety-hero">
+                <h2 class="chapter-title">Drošība</h2>
+                <p class="safety-subtitle">Obligāts ādas kopšanas priekšnosacījums</p>
+            </div>
+            <div class="safety-cards">
+                <div class="safety-card">
+                    <img src="img/safety_01.jpg" alt="Mehāniskā sejas tīrīšana" class="safety-card-image">
+                    <div class="safety-card-body">
+                        <h2 class="safety-title">01.</h2>
+                        <p class="safety-text">Tiek izmatoti vienreizlietojamie materiāli</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <img src="img/safety_02.jpg" alt="Ultraskaņas sejas tīrīšana" class="safety-card-image">
+                    <div class="safety-card-body">
+                        <h2 class="safety-title">02.</h2>
+                        <p class="safety-text">Izmantotie daudzreizējās lietošanas instrumenti pēc katra klienta apkalpošanas tiek mazgāti un dezinficēti</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <img src="img/safety_03.jpg" alt="Tīro dvieļu koomplekts" class="safety-card-image">
+                    <div class="safety-card-body">
+                        <h2 class="safety-title">03.</h2>
+                        <p class="safety-text">Katra klienta apkalpošanai tiek lietots atsevišķs, tīrs dvieļu komplekts</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <img src="img/safety_04.jpg" alt="Biodroga modele" class="safety-card-image">
+                    <div class="safety-card-body">
+                        <h2 class="safety-title">04.</h2>
+                        <p class="safety-text">Procedūras tiek veiktas pēc ražotāju noteiktā protokola</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="contacts.html" class="btn btn-filled">Pieteikties vizītei</a>
+        </section>
+
+        <footer>
+            <img class="footer-logo" src="img/logo.png" alt="skin.by.jana logo">
+            <nav class="footer-nav">
+                <a class="nav-links" href="index.html">Sākums</a>
+                <a class="nav-links" href="services.html">Procedūras</a>                
+                <a class="nav-links" href="contacts.html">Kontakti</a>
+            </nav>
+            <hr class="footer-vector-line">
+            <div class="social">
+                <a href="#"><img src="img/instagram.png" alt="instagram" class="soc-item"></a>
+                <a href="#"><img src="img/facebook.png" alt="facebook" class="soc-item"></a>
+            </div>
+            <div class="policy">
+                <span>&copy; 2022</span>
+                <a href="#">Privātuma politika</a>
+            </div>
+        </footer>
+
+
+
+        <!-- 3. Kontroldarba skripts (Līzinga kalkulators) -->
+        <script src="js/CalculatorScript.js"></script>
+
+
+
+
+
+
+
+
+
+        <!-- Hamburger Menu JavaScript -->
+        <script src="js/hamburgerMenu.js"></script>
+
+    </body>
+</html>

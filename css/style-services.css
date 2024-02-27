@@ -1,0 +1,111 @@
+:root {
+    --clr-white: #F2F2F2;
+    --clr-dark-grey: #1c1c1c;
+    --clr-main-bckg: #1c1c1ca4;
+    --clr-red: #CF4949;
+}
+
+/* ================ Main header title ================ */
+
+.cover {
+    min-height: 50vh;
+}
+
+.cont-services {
+    padding-top: 4em;
+}
+
+
+/* ================ Services - Facials ================ */
+
+
+.facials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1.5em;
+    padding: 3em 20% 3em 20%;
+    margin: auto;
+}
+
+.facials-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--clr-main-bckg);
+    border-radius: .3em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 2em 1em;
+}
+
+.facials-img {
+    height: 15em;
+    width: 15em;
+    border-radius: 7.5em;
+    background-color: var(--clr-white);
+}
+
+.facials-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.facials-card-header h5 {
+    color: var(--clr-dark-grey);
+    font-weight: 600;
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
+    text-align: center;
+    min-height: 4.5em;
+}
+
+.facials-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.service-price {
+    margin: 2em 0 2em 0;
+}
+
+.btn {    
+    /* padding: 1em 2em; */
+    font-size: clamp(.7rem, 2vw, .8rem);
+    justify-self: flex-end;
+}
+
+.btn-empty {
+    background-color: transparent;
+    border: 1px solid var(--clr-red);
+    color: var(--clr-red);
+    transition: ease-in-out .4s;
+}
+
+.btn:hover {
+    background-color: var(--clr-red);
+    color: var(--clr-white);
+}
+
+@media only screen and (max-width: 1136px) {
+    .facials {
+        padding: 3em 1.5em 3em 1.5em;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .facials {
+        grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    }
+
+    .facials-img {
+        height: 12em;
+        width: 12em;
+        border-radius: auto;
+    }
+
+    .facials-card-header h5 {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,122 @@
+:root {
+    --clr-white: #F2F2F2;
+    --clr-dark-grey: #1c1c1c;
+    --clr-main-bckg: #1c1c1ca4;
+    --clr-red: #CF4949;
+}
+
+#leasing-container {
+    padding: 3em 1.5em;
+    border-bottom: 1px solid var(--clr-dark-grey);
+    border-width: 2px;
+}
+
+.form-title {
+    font-weight: 600;
+    font-size: 1.7rem;
+    align-self: flex-start;
+}
+
+label {
+    text-align: left;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 40em;
+}
+
+.form-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    margin: auto;
+    gap: 1.5em;
+    margin-top: 3em;    
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"], select{
+    margin-top: .5em;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: var(--clr-red);
+    border-radius: .2em .2em 0 0;
+    border-width: 2px;
+}
+
+
+input[type="submit"] {
+    grid-column: 2 / 3;
+    margin-top: 2em;
+    padding: .8em 1.8em;
+    cursor: pointer;
+}
+
+
+/*result*/
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    padding-top: 1em;
+    width: 100%;
+    border-top: 2px solid var(--clr-white);
+    max-width: 40em;
+}
+
+.result-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    width: 100%;
+    gap: 2em;
+    padding: .5em;
+    align-items: center;
+}
+
+.monthly-payment-result, .refundable-amount-result {
+    padding: 1em;
+    background-color: var(--clr-white);
+    text-align: center;
+    font-weight: 600;
+    padding: 1em 1.8em;
+}
+
+
+@media only screen and (max-width: 465px) {
+    .result-wrap {
+        display: block;
+    }
+
+    #leasing-container {
+        padding: 3em 1.5em 3em 1.5em;
+    }
+}
+
+
+
+
+
+
+.error-message {
+    color: var(--clr-white);
+    background-color: var(--clr-red);
+    width: 100%;
+    margin-top: 1em;
+    padding: .5em;
+    text-align: center;
+}
